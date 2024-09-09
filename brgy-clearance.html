@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"/>
+
+    <title>Ka-Barangay - Barangay 87 Management Information System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css"/>
+    <link rel="stylesheet" href="assets/css/owl.css"/>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/custom-style.css"/>
+  </head>
+
+  <body>
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="assets/images/ssbrg.png" alt="" />
+              </a>
+
+              <h1 class="header-title">
+                <a
+                  href="#top"
+                  class="active"
+                  onclick="window.location.href = window.location.href.split('#')[0]; return false;"
+                  >Ka-Barangay : Barangay 87</a
+                >
+              </h1>
+
+              <!-- ***** Logo End ***** -->
+
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#top" class="active">Home</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#services">Services</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#officers">Officers</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#item item-3">Location</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="page-login.html">Sign In</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="page-register.html">Sign Up</a>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-banner" id="top">
+      <div class="container">
+        <div class="barangay-clearance-form">
+          <h2>Barangay Clearance</h2>
+          <div class="form-container">
+            <div class="form-left">
+              <img src="assets/images/logo.png" alt="Barangay Logo" />
+              
+            </div>
+            <div class="form-right">
+              <form action="/submit-clearance" method="POST">
+                <label for="tracking-code">Tracking Code</label>
+                <input type="text" id="tracking-code" name="tracking_code" readonly value="D7655-C15BB-CD5B7-B985A-110B1-AC5BA" />
+
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full_name" placeholder="Enter your name" required />
+
+                <label for="pickup-date">Pick-up Date</label>
+                <input type="date" id="pickup-date" name="pickup_date" required />
+
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment_method" required>
+                  <option value="">Select payment method</option>
+                  <!-- (Add options here) -->
+                </select>
+
+                <label for="reference-no">Reference No (for Gcash Payment only)</label>
+                <input type="text" id="reference-no" name="reference_no" placeholder="Enter Gcash reference no." />
+
+                <label for="purpose">Purpose</label>
+                <textarea id="purpose" name="purpose" placeholder="Enter purpose" rows="3"></textarea>
+
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
